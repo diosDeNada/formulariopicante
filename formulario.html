@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilosFormulario.css">
+</head>
+
+<body>
+  <main>
+  <h1 id="title">Formulario picante</h1>
+  <div>
+  <p id="description"> Saludos camarada del picante <br> Este es un pequeño formulario que funcionará como herramienta para elegir algunos de los siguientes productos de Capsicum Company. <br> Cualquier sugerencia o comentario puede añadirla al final de la página.</p><br>
+  </div>
+
+  <form id="survey-form">
+    <label id="name-label">Nombre: <input id="name" type="text" required placeholder="Escriba su nombre"></label><br>
+    <label id="email-label">electrónico: <input id="email" type="email" required placeholder=" Escriba su correo electrónico"></label><br>
+    <label id="number-label">ID: <input id="number" type="number" min=" " max=" " placeholder=" Escriba su ID"></label><br><br>
+
+    <label id="opcionesChiles">
+      Elija uno de estos chiles
+      <select id="dropdown">
+    <option value="Fantasma">Fantasma</option>
+    <option value="Habanero chocolate">Habanero chocolate</option>
+    <option value="Ají limón">Ají limón</option>
+    </select>
+  </label><br><br>
+  <label id="opcionesPicante">Elija un nivel de picante</label><br>
+  <input type="radio" name="picante" value="bajo"> bajo<br>
+  <input type="radio" name="picante" value="medio"> medio<br>
+  <input type="radio" name="picante" value="alto"> alto<br><br>
+
+  <label id="chilesProbados">Marque los chiles que ha probado<br>
+  <input type="checkbox" name="C.Reaper" value="C.Reaper">Carolina Reaper<br>
+  <input type="checkbox" name="H.Amarillo" value="H.Amarillo">Habanero amarillo<br>
+  <input type="checkbox" name="Fatalli amarillo" value="Fatalli amarillo">Fatalli amarillo<br>
+  <input type="checkbox" name="Sugar Rush durazno" value="Sugar Rush durazno">Sugar Rush durazno<br>
+  <input type="checkbox" name="H.Rojo" value="H.Rojo">Habanero rojo<br>
+  <input type="checkbox" name="Fantasma blanco" value="Fantasma blanco">Fantasma blanco<br>
+  <input type="checkbox" name="Rocoto" value="Rocoto">Rocoto<br>
+  <input type="checkbox" name="Cayene" value="Cayene">Cayene<br>
+</label>
+<br>
+<label id="comentarios">
+    Comentarios y sugerencias
+  <br><textarea id="textArea" placeholder="Acá puede escribir sobre el formulario, productos, ideas y demás sugerencias.">
+  </textarea>
+</label><br>
+
+  <input id="submit" type="submit">
+  
+  </form>
+  </main>
+</body>
+</html>
